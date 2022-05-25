@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: #3500d3;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +36,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Header {
+  background-color: #000;
+}
+
+.Body {
+  display: flex;
+  flex-direction: row;
+}
+
+.Editor {
+  width: 69vw;
+}
+
+.Sidebar {
+  font-size: 14px;
+  text-align: center;
+  color: #aaabb8;
+  font-family: consolas;
+  width: 31vw;
+  height: 94vh;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #222629;
+  padding: 5px 10px;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #aaabb8;
+  background-color: transparent;
+  resize: none !important;
+}
+
+.editor-btn {
+  background-color: #222629;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+.stdin, .flags, .stdout, .stderr {
+  word-wrap: break-word;
+  height: 45%;
+  width: 100%;
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: left;
 }
